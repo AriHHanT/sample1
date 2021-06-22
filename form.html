@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact{
+            display: flex;
+            justify-content: center;
+        }
+        .contact form {
+            display: table;
+            /* tab: column; */
+            justify-content: center;
+        }
+
+        .small {
+            font-size: 22px;
+            margin: 8px 0;
+        }
+
+        .big {
+            width: 18vw;
+            height: 4vh;
+            margin: 11px 0;
+        }
+        .y{
+            margin: 2px 30px 2px 0;
+            font-size: 20px;
+        }
+        .x{
+            margin: 16px 0;
+        }
+        .last{
+            font-size: 23px;
+        }
+        .centr{
+    font-size: 19px;
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <p class="centr">Contact Form</p>
+    <div class="contact">
+       
+        <form action="form.php">
+            <div class="name"> <label for="Name" class="small"> Enter Your Name :- </label>
+                <input type="text" name="Your Name" placeholder="Your Name" id="Name" class="big">
+            </div>
+            <div class="mail"> <label for="Email" class="small"> Enter Your Email :- </label>
+                <input type="email" name="Your Email" placeholder="Your Email Id" id="Email" class="big">
+            </div>
+            <div class="no"> <label for="Number" class="small"> Enter Your Contact No. :- </label>
+                <input type="contact number" name="Your Number" placeholder="Your Contact No." id="Number" class="big">
+            </div>
+            <div class="review">
+                 <label for="Like" class="small">Do You Like Our Website?</label> <br>
+                 <input type="radio" value="Yes" name="name" id="Yes" class="x">
+                 <label for="Yes" class="y">Yes</label>
+                 <input type="radio" value="No" name="name" id="No" class="x">
+                 <label for="No" class="y">No</label>
+                 <input type="radio" value="It Can be Improved" name="name" id="It Can be Improved" class="x">
+                 <label for="It Can be Improved" class="y">It Can be Improved</label>
+                <div class="review2">
+                    <label for="help" class="small"> Was It Helpful To You?  </label><br>
+                        <input type="radio" name="Helpful" id="Yes" class="x">
+                        <label for="Yes" class="y">Yes</label>
+                        <input type="radio" name="Helpful" id="No" class="x">
+                        <label for="No" class="y">No</label>
+                        <input type="radio" name="Helpful" id="A Little" class="x">
+                        <label for="A Little" class="y">A Little</label>
+                   
+
+                </div>
+                <input type="submit" value="SUBMIT" class="last">
+        </form>
+    </div>
+
+</body>
+
+</html>
